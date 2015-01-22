@@ -1,0 +1,40 @@
+doctype html>
+<html>
+  <head>
+    <meta charset="utf8">
+    <title>Here we go!</title>
+  </head>
+  <body>
+    This space intentionally left blank.
+      <script>
+
+
+      var enter = confirm("You are the captin of a Star Ship To go inside. Press OK");
+      if (enter) {
+        var enter = prompt("Your are inside the the Ship . Type [enter] to Go to te Bridge");
+        if (enter){
+          var enter = prompt("There is a Warship of unknown origin comming what would you like to do? Type [enter] to entercept or ok to Run");
+          elseif(enter){
+
+            var enter = prompt("Press 1 to  to Slip Stream to Warship,  Press 2 To To Run, Press 3 To wait for Warship");
+
+
+            if(enter < 2){
+              console.log("Slip Streaming to Warship");
+            }
+
+
+            if(enter >2){
+              console.log("Prepair all wepons Yellow alert We are waiting for the Warship");
+            }
+
+
+          } else {
+            console.log("It was all a dream");
+
+          }
+        }
+
+        </script>
+  </body>
+</html>
