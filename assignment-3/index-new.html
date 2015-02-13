@@ -1,0 +1,53 @@
+<!doctype html>
+<script src="http://thomaswilburn.net/scc/data/quakes.js">
+</script>
+<script>
+
+//What was the size of the biggest earthquake this week?
+
+// defining scratch variables and counters
+var highestMag=magnitude[0];
+//Loop through the array
+for(var i =0; i<magnitude.length; i++){
+  var r = magnitude[i];
+  //compare highest to current
+  if (r>highestMag){
+    highestMag =r;
+    //store value & index
+    }
+}
+console.log("The biggest Earthquake would be: " + highestMag + " The Highest Magnitude");
+
+
+
+
+
+console.log("Question: What is the average depth where a quake takes place? ");
+
+//What is the average depth where a quake takes place?
+var sum = 0; //initialize var sum to 0
+for(var i=0; i<depth.length; i++){ //loop through each element in the array
+  sum+=depth[i]; //add number in the elements of the array and store the number in varable sum.
+
+}
+//
+// Agerage the items by dividing number of elements by the sum of elements in the ARRAY.
+console.log("Average is :  " + sum/depth.length );
+
+//
+//How many quakes have a type other than "earthquake" (e.g., "quarry blast" and "explosion")
+var qBlast = "quarry blast";
+var explosion = "explosion";
+
+for(i=0; i<type.length; i++){
+  console.log("This is how many Quarry Blast  " + qBlast.length + " and Explosions " + explosion.length + " are in the data used." );
+}
+
+
+
+
+// console.log("The total sum: " + sum); //echo to console what is in the var SUM
+
+// console.log("There are : " + depth.length + "items in the array."); // find how many elements are in the ARRAY
+//
+</script>
